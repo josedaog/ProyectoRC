@@ -4,9 +4,9 @@ Si en algo podemos caracterizarnos los seres humanos es en entender, razonar e i
 
 En respuesta a esta pregunta surge la *Representación del conocimiento*, situándola pues como uno de los pilares fundamentales de  la Inteligencia Artificial.
 
-1. [Introducción](##introduccion)
-2. [Objetivo](##objetivo)
-3. [Tipos de conocimiento](##tipos-de-conocimiento)
+* [Introducción](##introduccion)
+* [Objetivo](##objetivo)
+* [Tipos de conocimiento](##tipos-de-conocimiento)
 
 ## Introducción
 
