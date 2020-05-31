@@ -19,3 +19,9 @@ Bibliografía:
 [What is Knowledge Representation in AI? Techniques You Need To Know](https://www.edureka.co/blog/knowledge-representation-in-ai/)
 
 [El conocimiento en Inteligencia Artificial](https://es.slideshare.net/warrionet/el-conocimiento-en-ia)
+
+[Representación del conocimiento](http://www.cs.us.es/~fsancho/?e=172)
+
+[Representación del conocimiento 2](https://www.cs.upc.edu/~bejar/ia/transpas/teoria/3-RC0-Intro_rep_conocimiento.pdf)
+
+[Knowledge representation techniques](http://www.hbcse.tifr.res.in/jrmcont/notespart1/node38.html)
