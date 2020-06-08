@@ -1,8 +1,8 @@
-%  P97 (**) Sudoku
-%  
-%  Sudoku puzzles go like this:  
+%  Sudoku
 
-%   Problem statement                Solution
+%  El sudoku tendrá esta estructura:  
+
+%   Problema introducido             Solución
 
 %    .  .  4 | 8  .  . | .  1  7     9  3  4 | 8  2  5 | 6  1  7	     
 %            |         |                     |         |
@@ -22,17 +22,19 @@
 %            |         |                     |         |
 %    2  4  . | .  .  1 | 5  .  .     2  4  6 | 3  9  1 | 5  7  8
 
-% Every spot in the puzzle belongs to a (horizontal) row and a (vertical)
-% column, as well as to one single 3x3 square (which we call "square" 
-% for short). At the beginning, some of the spots carry a single-digit
-% number between 1 and 9. The problem is to fill the missing spots with
-% digits in such a way that every number between 1 and 9 appears exactly
-% once in each row, in each column, and in each square.
+% A cada lugar del tablero le corresponte una línea (horizontal) y una
+% columna (vertical) a la vez que una región 3x3.
+% En la situación inicial nos encontramos con un tablero aún por rellenar
+% con algunos digitos que van desde el 1 hasta el 9.
+% El problema que surge a continuación es completar los huecos vacíos 
+% con dígitos del 1 al 9 de manera que en cada línea, columna  y región
+% aparezca un solo dígito.
 
-% We represent the Sudoku puzzle as a simple list of 81 digits. At
-% the beginning, the list is partially instantiated. During the 
-% process, all the elememts of the list get instantiated with digits.
+% Para representar el Sudoku en prolog lo haremos a través de una simple
+% lista de 81 dígitos. La introduciremos con algunos dígitos y el programa
+% deberá ser capaz de devolvernos las posibles soluciones.
 
+%
 % We are going to treat each spot as a Prolog term spot(X,R,C,S) where
 % X is the number to put into the field, R is the row, C the column, and
 % S the square the field belongs to. R, C, and S are lists which represent

@@ -7,8 +7,7 @@
 El proyecto está compuesto por:
 
 1. Base teórica en la que trataremos las técnicas más utilizadas en Representación del conocimiento en el campo de la Inteligencia Artificial. Ubicado en teoria.md.
-2. Parte práctica que consta de un proyecto realizado en Prolog.
-   El código fuente lo podrá encontrar en source.pl y su explicación en practica.md.
+2. Parte práctica que consta de un proyecto realizado en Prolog. EL código fuente junto con su explicación se encuentra ubicado en sudoku.pl.
 
 Bibliografía:
 
@@ -25,3 +24,5 @@ Bibliografía:
 [Representación del conocimiento 2](https://www.cs.upc.edu/~bejar/ia/transpas/teoria/3-RC0-Intro_rep_conocimiento.pdf)
 
 [Knowledge representation techniques](http://www.hbcse.tifr.res.in/jrmcont/notespart1/node38.html)
+
+[P99 - Prolog problems](https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/)
