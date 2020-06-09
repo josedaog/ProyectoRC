@@ -27,14 +27,14 @@ Por lo general, podemos clasificar el conocimiento en tres tipos:
 
     Es un tipo especial de conocimiento usado por los humanos para resolver problemas complejos. Está relacionado con la palabra griega *heuriskein* que significa descubrir. Entendemos por heurístico a un criterio, método, estrategia seguida para simplificar la solución de un problema.
 
-![Imagen1](./img1.png)
+![Imagen1](./imagenes/img1.png)
 
 ## Objetivo
 
 La representación del conocimiento deberia comprender y describir la riqueza del mundo. Sin embargo, en la práctica, el esfuerzo llevado a cabo en la investigación de éste se ha concentrado en desarrollar un conjunto de normas que la máquina debe realizar para llegar a un fin específico. Este fin proviene de la abstracción del conocimiento haciendo un examen minucioso del mundo real.
 Con esto queremos decir que las técnicas y herramientas son básicas para el desarrollo sí, pero el verdadero reto se encuentra en entender y poder describir la riqueza que nos rodea.
 
-![Imagen2](./img2.jpg)
+![Imagen2](./imagenes/img2.jpg)
 
 ## Representación del conocimiento en IA
 
@@ -50,7 +50,7 @@ En la actualidad no tenemos una respuesta completa a estas preguntas, no obstant
 
 Un esquema que muestre que elementos componen un sistema inteligente:
 
-![Imagen3](./img3.png)
+![Imagen3](./imagenes/img3.png)
 
 * Percepción: Encargada de recibir datos o información del entorno.
 * Aprendizaje: El sistema debe ser capaz de aprender del entorno, de manera que el computador pueda aprender por el mismo sin necesidad de ser programado.

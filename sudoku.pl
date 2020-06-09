@@ -34,7 +34,10 @@
 % lista de 81 dígitos. La introduciremos con algunos dígitos y el programa
 % deberá ser capaz de devolvernos las posibles soluciones.
 
-%
+% Trataremos cada posición como un término en Prolog como: spot(X,R,C,S)
+% X será el número que se pondrá en el tablero, R la línea, C la columna,
+% y S a la región del tablero que le corresponde.
+% R, C y S son listas que representan las diferentes combinaciones de números.
 % We are going to treat each spot as a Prolog term spot(X,R,C,S) where
 % X is the number to put into the field, R is the row, C the column, and
 % S the square the field belongs to. R, C, and S are lists which represent
