@@ -7,6 +7,7 @@ En respuesta a esta pregunta surge la *Representación del conocimiento*, situá
 * [Introducción](##introducción)
 * [Objetivo](##objetivo)
 * [Representación del conocimiento en IA](##representación-del-conocimiento-en-ia)
+* [Técnicas de representación del conocimiento](##técnicas-de-representación-del-conocimiento)
 
 ## Introducción
 
@@ -74,3 +75,66 @@ Este nos dice que no ya que no se le ha dotado de ese conocimiento, no sabe ni q
     ?- esPato(X).
     X = Lucas   
 Incluso si le preguntamos por el nombre de un pato este nos responderá porque ya ha sido incluido en su *base de conocimiento*.
+
+## Esquemas de representación del conocimiento
+
+El principal objetivo de la representación del conocimiento es facilitar la extracción de conclusiones (inferencia) a partir del conocimiento, para ello, necesitamos
+expresar el conocimiento en una forma computable.
+
+La sintaxis describe las posibles formas de construir y combinar los elementos del lenguaje. Es decir, la sintaxis especifica cuál es el conjuntode sentencias de un lenguaje y qué combinaciones de sentencias son válidas. La semántica determina el significado de los elementos del lenguajey la relación entre estos y su referente en el dominio real. Es decir, lasemántica determina de manera no ambigua qué significa cada una delas sentencias del lenguaje.
+
+Es importante destacar que los esquemas de representación van más allá de lasestructuras de datos o las bases de datos, las cuales se preocupan de maneraexclusiva de cómo almacenar y recuperar datos de manera eficiente. Interna-mente, la implementación de un esquema de representación puede utilizarestructuras de datos y bases de datos, pero tiene que añadir otras estructuras yprocesos que permitan hacer inferencia de conocimiento nuevo.
+
+![Imagen5](./imagenes/img5.jpg)
+
+## Propiedades de un esquema de representación
+
+Un buen esquema de representación del conocimiento debe ofrecer un acceso rápido y preciso al contenido
+,así como las propiedades siguiente:
+
+1. Representación apropiada. Debe tener la habilidad para representar todo el conocimiento que es necesario para el dominio en cuestión. Es decir, tiene que ser lo suficientemente rico como para contener los datos y la información mínima para dar una solución apropiada al problema.
+
+2. Inferencia apropiada. Tiene que ser capaz demanipular las estructuras de la representación, de modo que en todo momento se puedan derivar nuevas estructuras asociadas con conocimiento nuevoinferido del antiguo.
+3. Eficiencia inferencial. Debe mejorarel proceso de inferencia mediante la inclusión de heurísticas y guías que lo agilicen, para, de este modo, optimizar el cómputo. Por lo tanto, tiene que representar aquellas características del problema que puedan ser explotadas demanera computacional.
+4. Eficiencia de adquisición. El esquema debe permitir la fácil incorporación del conocimiento nuevo.
+
+Otras propiedades que conviene tener en cuenta son:
+
+* Claridad. Facilidad de identificar el conocimiento representado.
+* Naturalidad. Capacidad de representar el conocimiento en su forma más "natural", de manera que pequeños cambios en el problema requieran a su vez, pequeños cambios en el esquema.
+* Modularidad. Posibilidad de fragmentar el conocimiento sin perder eficiencia ni eficacia.
+
+## Etapas de la representación del conocimiento
+
+Dado un problema complejo que requiere el uso intensivo de conocimiento,
+podemos considerar las siguientes etapas en su resolución:
+
+* El punto de partida es el problema que se quiere resolver, que marca cuál será el dominio de interés.
+* La siguiente fase es la adquisición de conocimiento sobre el dominio de interés y el problema que se quiere resolver.
+Obtener el conocimiento de un dominio es una tarea muy compleja que involucra capacidades de procesado de la información como por ejemplo percepción, comunicación,asociación y razonamiento. Es vital obtener todo el conocimiento relevan-te para el problema y evitar conocimiento superfluo. De este modo, evitaremos problemas (errores, malas interpretaciones, redundancias, informa-ción sobrante, dispersión, etc.), minimizaremos los errores y mejoraremos el rendimiento en el acceso a la información.
+* Una vez obtenido el conocimiento del dominio, el paso siguiente es su codificación en un esquema apropiado. El tipo de codificación elegido y el modo como codificar la información condicionará hasta qué punto el conocimiento puede ser integrado con otras fuentes de información y compartido con terceros.
+* Entonces, se aplica un motor de inferencia sobre el conocimiento guar-dado en el esquema de representación para extraer conclusiones sobre elproblema.•  
+* Para comunicar el resultado, el último paso es la interpretación de las conclusiones obtenidas en términos de hechos del dominio. De este modo,obtenemos una solución al problema planteado inicialmente.
+
+## Retos que plantea la representación del conocimiento
+
+En las etapas anteriormente identificadas se nos plantea varias cuestiones como:
+
+* ¿Cómo elegir cuál es el dominio relevante al problema? ¿Qué conocimiento queda dentro y fuera de la representación?
+* Una vez elegido el dominio de interés, ¿cuánto conocimiento almacenar?
+* ¿Cómo se adquiere éste?
+* ¿Qué uso se le dará?
+* A partir de todo esto, ¿cuál es el esquema de representación más adecuado para el problema?
+
+Todas estas cuestiones nos sirven para darnos cuenta de lo complicado que será elegir una buena representación. Tenemos que hacer énfasis en que cuando hablamos de conocimiento, además de representarlo, no debemos olvidar en ningún momento que también deberemos procesarlo.Además de estas decisiones, que son particulares para cada problema, hay unaserie de retos más generales que aparecerán en cualquier problema de representación del conocimiento que consideremos: la imposibilidad de modelizarlo todo, el conocimiento de sentido común y el lenguaje natural. Antes de continuar, estudiaremos estos retos con más detalle.
+
+* Problema de modelizar el mundo. El éxito con el que un problema pueda ser solucionado dependerá de nuestra habilidad para representar el conocimiento, sin olvidar que no trabajaremos sobre el mundo, sino una simplificación de este, que será imperfecta e incompleta.
+* Problema del sentido común. Es díficil de aplicar en todas las situaciones, haciendonos a veces cometer errores. Si queremos evitar que un sistema inteligente cometa este tipo de errores, debemos codificar el conocimiento de sentido común relativo al problema, para ello tendremos en cuenta dos factores:
+
+    * Existe gran cantidad de conocimiento de sentido común, por lo que debemos elegir un mínimo suficiente para la resolución del problema,
+    * Este tipo de conocimiento suele darse por sabido, lo que hace muy fácil que lo pasemos por alto. Por lo que requerirá un esfuerzo adicional a la hora de especificarlo.
+
+* Problema del lenguaje natural. El lenguaje que utilizamos se denomina lenguaje natural, muy alejado de los lenguajes formales usados en programación.
+Posee gran expresividad que le permite representar cualquier elemento que imaginemos y ya gran cantidad de conocimiento está representado mediante este lenguaje.
+Sin embargo, genera un gran inconveniente, la ambigüedad. Es decir, permite que una frase o palabra admita más de una interpretación posible. Este es el motivo por el que en programación es usado los lenguajes formales.
+
