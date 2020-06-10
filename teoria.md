@@ -143,7 +143,7 @@ Sin embargo, genera un gran inconveniente, la ambigüedad. Es decir, permite que
 * [Lógica](###lógica) 
 * [Reglas de producción](###reglas-de-producción)
 * [Redes semánticas](##redes-semánticass)
-* [Marcos](###marcos)
+* [Marcos](###Marcos)
 * [Redes neuronales](###redes-neuronales)
 
 ### Lógica
