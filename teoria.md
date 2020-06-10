@@ -7,7 +7,11 @@ En respuesta a esta pregunta surge la *Representación del conocimiento*, situá
 * [Introducción](##introducción)
 * [Objetivo](##objetivo)
 * [Representación del conocimiento en IA](##representación-del-conocimiento-en-ia)
-* [Técnicas de representación del conocimiento](##técnicas-de-representación-del-conocimiento)
+* [Esquemas de Representación del Conocimiento](##esquemas-de-representación-del-conocimiento)
+* [Propiedades de un esquema de representación](##propiedades-de-un-esquema-de-representación)
+* [Etapas de la Representación del Conocimiento](##etapas-de-la-representación-del-conocimiento)
+* [Retos que plantea la Representación del Conocimiento](##retos-que-plantea-la-representación-del-conocimiento)
+* [Formalismo de Representación del Conocimiento](##formalismo-de-representación-del-conocimiento)
 
 ## Introducción
 
@@ -143,7 +147,7 @@ Sin embargo, genera un gran inconveniente, la ambigüedad. Es decir, permite que
 * [Lógica](###lógica) 
 * [Reglas de producción](###reglas-de-producción)
 * [Redes semánticas](##redes-semánticass)
-* [Marcos](###Marcos)
+* [Marcos](###marcos)
 * [Redes neuronales](###redes-neuronales)
 
 ### Lógica
