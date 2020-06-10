@@ -13,6 +13,10 @@ Bibliografía:
 
 [Canal de Youtube del profesor - José Carpio](https://www.youtube.com/user/josecarpioc)
 
+[Apuntes de la asignatura](http://www.uhu.es/jose.carpio/N_95.pdf)
+
+[Ejercicios implementados en Prolog, paso a paso](http://www.cs.us.es/~jalonso/pub/2006-ej_prog_declarativa.pdf)
+
 [Introdución a la representacion del conocimiento](http://openaccess.uoc.edu/webapps/o2/bitstream/10609/69005/2/Representaci%C3%B3n%20del%20conocimiento_M%C3%B3dulo%201_Introducci%C3%B3n%20a%20la%20representaci%C3%B3n%20del%20conocimiento.pdf)
 
 [What is Knowledge Representation in AI? Techniques You Need To Know](https://www.edureka.co/blog/knowledge-representation-in-ai/)
@@ -26,3 +30,5 @@ Bibliografía:
 [Knowledge representation techniques](http://www.hbcse.tifr.res.in/jrmcont/notespart1/node38.html)
 
 [P99 - Prolog problems](https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/)
+
+[Metodología de representación](https://sitiointeligenciaa.wordpress.com/representacion-del-conocimiento/)

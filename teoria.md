@@ -37,7 +37,7 @@ Con esto queremos decir que las técnicas y herramientas son básicas para el de
 
 ![Imagen2](./imagenes/img2.jpg)
 
-## Representación del conocimiento en IA
+## Representación del Conocimiento en IA
 
 Para representar algo necesitamos saber:
 
@@ -76,7 +76,7 @@ Este nos dice que no ya que no se le ha dotado de ese conocimiento, no sabe ni q
     X = Lucas   
 Incluso si le preguntamos por el nombre de un pato este nos responderá porque ya ha sido incluido en su *base de conocimiento*.
 
-## Esquemas de representación del conocimiento
+## Esquemas de Representación del Conocimiento
 
 El principal objetivo de la representación del conocimiento es facilitar la extracción de conclusiones (inferencia) a partir del conocimiento, para ello, necesitamos
 expresar el conocimiento en una forma computable.
@@ -104,7 +104,7 @@ Otras propiedades que conviene tener en cuenta son:
 * Naturalidad. Capacidad de representar el conocimiento en su forma más "natural", de manera que pequeños cambios en el problema requieran a su vez, pequeños cambios en el esquema.
 * Modularidad. Posibilidad de fragmentar el conocimiento sin perder eficiencia ni eficacia.
 
-## Etapas de la representación del conocimiento
+## Etapas de la Representación del Conocimiento
 
 Dado un problema complejo que requiere el uso intensivo de conocimiento,
 podemos considerar las siguientes etapas en su resolución:
@@ -131,10 +131,64 @@ Todas estas cuestiones nos sirven para darnos cuenta de lo complicado que será 
 * Problema de modelizar el mundo. El éxito con el que un problema pueda ser solucionado dependerá de nuestra habilidad para representar el conocimiento, sin olvidar que no trabajaremos sobre el mundo, sino una simplificación de este, que será imperfecta e incompleta.
 * Problema del sentido común. Es díficil de aplicar en todas las situaciones, haciendonos a veces cometer errores. Si queremos evitar que un sistema inteligente cometa este tipo de errores, debemos codificar el conocimiento de sentido común relativo al problema, para ello tendremos en cuenta dos factores:
 
-    * Existe gran cantidad de conocimiento de sentido común, por lo que debemos elegir un mínimo suficiente para la resolución del problema,
-    * Este tipo de conocimiento suele darse por sabido, lo que hace muy fácil que lo pasemos por alto. Por lo que requerirá un esfuerzo adicional a la hora de especificarlo.
+  * Existe gran cantidad de conocimiento de sentido común, por lo que debemos elegir un mínimo suficiente para la resolución del problema,
+  * Este tipo de conocimiento suele darse por sabido, lo que hace muy fácil que lo pasemos por alto. Por lo que requerirá un esfuerzo adicional a la hora de especificarlo.
 
 * Problema del lenguaje natural. El lenguaje que utilizamos se denomina lenguaje natural, muy alejado de los lenguajes formales usados en programación.
 Posee gran expresividad que le permite representar cualquier elemento que imaginemos y ya gran cantidad de conocimiento está representado mediante este lenguaje.
 Sin embargo, genera un gran inconveniente, la ambigüedad. Es decir, permite que una frase o palabra admita más de una interpretación posible. Este es el motivo por el que en programación es usado los lenguajes formales.
 
+## Formalismos de Representación del Conocimiento
+
+* [Lógica](###lógica) 
+* [Reglas de producción](###reglas-de-producción)
+* [Redes semánticas](##redes-semánticass)
+* [Marcos](###marcos)
+* [Redes neuronales](###redes-neuronales)
+
+### Lógica
+
+La lógica es la disciplina que estudia los métodos de formalización del conocimiento.
+Para ello existen dosniveles de abstracción según el nivel de detalle que se quiera formalizar: *Lógica proposicional y lógica de predicados.*
+
+* La lógica proposicional (o de enunciados) toma como base las frases declarativas simples o proposiciones que son aquellos elementos que pueden ser considerados como *verdaderos o falsos*
+* La lógica de predicados estudia las frases declarativas con mayor grado de detalle, considerando la estructura interna de las proposiciones, tomando como elemento básico los objetos y las relaciones entre dichos objetos. Es decir, se distingue: **que se afirma** (predicado o relación) y **de quién se afirma**(objeto).
+
+### Reglas de producción
+
+Los sistemas de producción son uno de los mecanismo de representación del conocimiento más populares. Son reglas del tipo **Si-Entonces**. Ampliamente utilizados en sistemas expertos.
+
+* Su estructura general es: **Antecedente => Consecuente**
+
+El *antecedente* contiene las cláusulas que deben cumplirse para que la regla pueda evañuarse o ejecutarse. El *consecuente* indica las conclusiones que se deducen de las premisas o las acciones que el sistema debe realizar cuando ejecuta la regla.
+
+Ejemplo: **IF** (coche COCHE-JUAN) AND (luces COCHE_JUAN ténues) **THEN** (verificar_batería COCHE-JUAN)
+
+### Redes semánticas
+Las redes semánticas son una alternativa a la lógica de predicados, están basadas en la idea de que loso bjetos o los conceptos pueden ser unidos por alguna relación.Estas relaciones se representan usando una liga que conecte dos conceptos.Los nodos y las ligas pueden ser cualquier cosa, dependiendo de la situación a modelar. Por ejemplo:
+
+![Imagen6](./imagenes/img6.png)
+
+### Marcos
+Un marco (frame), es una colección de atributos, que normalmente llamados ranuras (slots), con valores asociados (y posibles restricciones entre los valores), que describe alguna entidad del mundo, algunas veces el marco describe una entidad en un sentido absoluto, y en otras representa la entidad desde un punto de vista particular. Un frame único tomando independientemente no suele ser útil, en lugar de eso se constituyen sistemas de frames a partir de recolecciones de frames conectados unos con otros en virtud del hecho del que el valor de un atributo de un frame puede ser a su vez otro frame.
+
+Su estructura es la siguiente:
+* Nombre: El cuál debe ser único para diferenciarlos de los demás.
+* Padre o Naturaleza: Equivale a la clase superior a la cual pertenece y es la que le permite el mecanismo de herencia.
+* Slorts o Atributos: Constituye el cuerpo y cada uno representa una propiedad estándar o atributo del elemento representado.
+
+![Imagen7](./imagenes/img7.png)
+
+### Redes neuronales
+Las redes neuronales artificiales son un modelo inspirado en el funcionamiento del cerebro humano. Esta formado por un conjunto de nodos conocidos como neuronas artificiales que están conectadas y transmiten señales entre sí. Estas señales se transmiten desde la entrada hasta generar una salida.
+Su estructura general es la siguiente:
+
+![Imagen8](./imagenes/img8.jpg)
+
+¿Su objetivo? aprender modificándose automáticamente a si mismo de forma que puede llegar a realizar tareas complejas que no podrían ser realizadas mediante la clásica programación basada en reglas. De esta forma se pueden automatizar funciones que en un principio solo podrían ser realizadas por personas.
+
+Como se ha mencionado el funcionamiento de las redes se asemeja al del cerebro humano. Las redes reciben una serie de valores de entrada y cada una de estas entradas llega a un nodo llamado neurona. Las neuronas de la red están a su vez agrupadas en capas que forman la red neuronal. Cada una de las neuronas de la red posee a su vez un peso, un valor numérico, con el que modifica la entrada recibida. Los nuevos valores obtenidos salen de las neuronas y continúan su camino por la red. Este funcionamiento puede observarse de forma esquemática en la siguiente imagen.
+
+![Imagen9](./imagenes/img9.png)
+
+Una vez que se ha alcanzado el final de la red se obtiene una salida que será la predicción calculada por la red. Cuantas más capas posea la red y más compleja sea, también serán mas complejas las funciones que pueda realizar.
