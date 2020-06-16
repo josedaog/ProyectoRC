@@ -6,8 +6,9 @@
 
 El proyecto está compuesto por:
 
-1. Base teórica en la que trataremos las técnicas más utilizadas en Representación del conocimiento en el campo de la Inteligencia Artificial. Ubicado en teoria.md.
-2. Parte práctica que consta de un sistema experto que diagnostica si un paciente sufre de resfriado, gripe o covid19. El código fuente junto con su explicación se encuentra ubicado en expert.pl.
+1. Base teórica en la que trataremos las técnicas más utilizadas en Representación del conocimiento en el campo de la Inteligencia Artificial. Lo puedes encontrar en [Teoria](https://github.com/nordin-lab/ProyectoRC/tree/master/Teoria).
+2. Parte práctica que consta de un sistema experto que diagnostica si un paciente sufre de resfriado, gripe o covid19. El código fuente junto con su explicación se encuentra en [Sistema Experto](https://github.com/nordin-lab/ProyectoRC/tree/master/Sistema_Experto).
+3. Como ejecutar Scryer-Prolog (o cualquier otra versión) y crear un entorno de desarrollo con Docker y WSL2, de manera que puedas usar todas las librerías que Scryer-Prolog ofrece y así ejecutar cualquier código de [The Power of Prolog](https://github.com/triska/the-power-of-prolog) sin quebraderos de cabeza.
 
 Bibliografía:
 
