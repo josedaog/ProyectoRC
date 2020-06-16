@@ -158,11 +158,23 @@ problem(3, P) :-
              [_,_,_,_,_,_,_,7,1],
              [_,_,_,_,_,1,_,3,_]].
 
+problem(4,P) :-
+        P = [[1,_,_,_,_,9,_,_,4],
+             [_,_,_,_,_,_,7,_,_],
+             [5,_,_,3,_,_,2,_,_],
+             [_,8,_,_,_,_,5,_,6],
+             [_,_,_,_,8,_,_,_,_],
+             [6,9,1,_,_,_,_,8,_],
+             [_,_,7,_,_,4,_,_,2],
+             [_,_,2,_,_,_,_,_,_],
+             [3,_,_,5,_,_,_,7,1]].
+
 test(N) :- 
-    problem(N, Rows),
-    sudoku(Rows),
-    maplist(label, Rows),
-    maplist(portray_clause, Rows).
+        problem(N, Rows),
+        sudoku(Rows),
+        maplist(label, Rows),
+        maplist(portray_clause, Rows).
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    Examples:
 
