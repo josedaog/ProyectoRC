@@ -73,6 +73,10 @@ nl,
 write('4. La atencion medica se pondra en contacto con usted.'),
 nl.
 
+% Dada la situación actual en caso de padecer tales síntomas es muy probable que padezca de covid, 
+% aún así se le atribuye otro caso dado que se deben distinguir entre el diagnóstico de un caso grave y leve.
+% Siempre teniendo en cuenta que esto es un diagnóstico básico y que su uso es puramente ilustrativo.
+
 pulmonia :-
 verify(dificultad_respirar),
 verify(dolor_pecho),
@@ -83,7 +87,6 @@ write('1. Quedese en casa y evite el contacto con otras personas.'),
 nl,
 write('2. Si sufre de sintomas graves necesita hospitalizacion.'),
 nl.
-
 
 % Como hacer las preguntas 
 
