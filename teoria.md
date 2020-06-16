@@ -120,7 +120,7 @@ Obtener el conocimiento de un dominio es una tarea muy compleja que involucra ca
 * Entonces, se aplica un motor de inferencia sobre el conocimiento guar-dado en el esquema de representación para extraer conclusiones sobre elproblema.•  
 * Para comunicar el resultado, el último paso es la interpretación de las conclusiones obtenidas en términos de hechos del dominio. De este modo,obtenemos una solución al problema planteado inicialmente.
 
-## Retos que plantea la representación del conocimiento
+## Retos que plantea la Representación del Conocimiento
 
 En las etapas anteriormente identificadas se nos plantea varias cuestiones como:
 
@@ -196,3 +196,16 @@ Como se ha mencionado el funcionamiento de las redes se asemeja al del cerebro h
 ![Imagen9](./imagenes/img9.png)
 
 Una vez que se ha alcanzado el final de la red se obtiene una salida que será la predicción calculada por la red. Cuantas más capas posea la red y más compleja sea, también serán mas complejas las funciones que pueda realizar.
+
+## Resumen
+
+Llegados a este punto, ya deberíamos comprender en que consiste la Representación del Conocimiento, sus propiedades, que etapas la componen, los retos que plantea y la metodología por la cual es representada.
+
+Para comprender y entrar más en detalle en como esta es aplicada a Prolog convendría pasarse por los siguientes enlaces.
+
+[Canal de Youtube del profesor - José Carpio](https://www.youtube.com/user/josecarpioc)
+
+[The Power of Prolog - Web dedicada a Prolog por Markus Triska](https://www.metalevel.at/prolog)
+
+[Ejercicios implementados en Prolog, paso a paso](http://www.cs.us.es/~jalonso/pub/2006-ej_prog_declarativa.pdf)
+

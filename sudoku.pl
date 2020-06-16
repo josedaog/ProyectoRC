@@ -59,7 +59,6 @@ sudoku(_) :-
 
 % ---------------------------------------------------------------
 
-% La
 % The most difficult part of the problem solution is to prepare 
 % the list of spot/4 terms representing the spots in the puzzle.
 % We have to make sure that every spot "knows" its row, column,
