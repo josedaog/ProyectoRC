@@ -5,9 +5,10 @@
 
 go:-
 hypothesis(Enfermedad),
+nl,
 write('Hay una alta probabilidad de que el paciente tenga: '),
 write(Enfermedad),
-nl,
+nl, nl,
 write('Hasta la próxima, cuídate.'),
 undo.
 
