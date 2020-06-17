@@ -36,4 +36,4 @@ Bibliografía:
 
 [Metodología de representación](https://sitiointeligenciaa.wordpress.com/representacion-del-conocimiento/)
 
-Prolog español98
+s
