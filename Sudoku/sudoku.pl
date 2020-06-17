@@ -67,7 +67,7 @@ sudoku(Rows) :-
 blocks([], [], []).                                                % Caso base de 3 bloques vacíos
 blocks([N1,N2,N3|Ns1], [N4,N5,N6|Ns2], [N7,N8,N9|Ns3]) :-          % Haciendo uso de [Cabeza|Resto] hacemos que cada bloque tenga a lo sumo 3 elementos
         all_distinct([N1,N2,N3,N4,N5,N6,N7,N8,N9]),                % No debe haber elementos repetidos
-        blocks(Ns1, Ns2, Ns3).                                     % Debe darse el mismo cado para la segunda y tercera region
+        blocks(Ns1, Ns2, Ns3).                                     % Debe darse el mismo caso para la segunda y tercera region
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
