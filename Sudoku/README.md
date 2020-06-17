@@ -44,7 +44,7 @@ Para introducir un nuevo tablero bastaría con
    copiar y pegar la siguiente estructura, añadiendole un numero o letra que lo 
    identifique y rellenando los huecos con el numero que desee.
 
-   Estructura:
+* Estructura:
 
 problem(numero,P) :-
 
