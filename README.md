@@ -1,4 +1,4 @@
-# Representación del conocimiento
+# Representación del conocimiento - Prolog
 
 ## Curso 2019/2020
 
@@ -35,3 +35,5 @@ Bibliografía:
 [P99 - Prolog problems](https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/)
 
 [Metodología de representación](https://sitiointeligenciaa.wordpress.com/representacion-del-conocimiento/)
+
+Prolog español98
