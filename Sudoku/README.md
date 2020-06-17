@@ -1,10 +1,10 @@
 # Sudoku en Scryer-Prolog
 
-[Descripción del problema](##descripción-del-problema)
+* [Descripción del problema](#descripción-del-problema)
 
-[Funcionamiento del código](##funcionamiento-del-código)
+* [Funcionamiento del código](#funcionamiento-del-código)
 
-[Ejecutar Scryer-Prolog](##ejecutar-scryer-prolog)
+* [Ejecutar Scryer-Prolog](#ejecutar-scryer-prolog)
 
 ## Descripción del problema
 

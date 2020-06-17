@@ -4,15 +4,15 @@ Si en algo podemos caracterizarnos los seres humanos es en entender, razonar e i
 
 En respuesta a esta pregunta surge la *Representación del conocimiento*, situándola pues como uno de los pilares fundamentales de  la Inteligencia Artificial.
 
-* [Introducción](##introducción)
-* [Objetivo](##objetivo)
-* [Representación del conocimiento en IA](##representación-del-conocimiento-en-ia)
-* [Esquemas de Representación del Conocimiento](##esquemas-de-representación-del-conocimiento)
-* [Propiedades de un esquema de representación](##propiedades-de-un-esquema-de-representación)
-* [Etapas de la Representación del Conocimiento](##etapas-de-la-representación-del-conocimiento)
-* [Retos que plantea la Representación del Conocimiento](##retos-que-plantea-la-representación-del-conocimiento)
-* [Formalismo de Representación del Conocimiento](##formalismo-de-representación-del-conocimiento)
-* [Resumen](##resumen)
+* [Introducción](#introducción)
+* [Objetivo](#objetivo)
+* [Representación del conocimiento en IA](#representación-del-conocimiento-en-ia)
+* [Esquemas de Representación del Conocimiento](#esquemas-de-representación-del-conocimiento)
+* [Propiedades de un esquema de representación](#propiedades-de-un-esquema-de-representación)
+* [Etapas de la Representación del Conocimiento](#etapas-de-la-representación-del-conocimiento)
+* [Retos que plantea la Representación del Conocimiento](#retos-que-plantea-la-representación-del-conocimiento)
+* [Formalismo de Representación del Conocimiento](#formalismo-de-representación-del-conocimiento)
+* [Resumen](#resumen)
 
 ## Introducción
 
