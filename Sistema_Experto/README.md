@@ -1,6 +1,6 @@
-# Sistema Experto. 
+# Sistema Experto
 
-## Covid-19.
+## Covid-19
 
 El Sistema Experto propuesto diagnostica si el paciente padece de covid-19
 gripe común o un simple resfriado, ofreciendole así unas pautas a seguir.

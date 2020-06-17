@@ -121,7 +121,23 @@ show(Options, Rows) :-
 show(_, _) :- halt.
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-   Sample problems.
+   Problemas a resolver, para introducir un nuevo tablero bastaría con
+   copiar y pegar la siguiente estructura, añadiendole un numero o letra que lo 
+   identifique y rellenando los huecos con el numero que desee.
+
+   Estructura:
+
+problem(numero,P) :- 
+        P = [[_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_]].
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 problem(1, P) :- 
@@ -134,7 +150,6 @@ problem(1, P) :-
              [8,_,1,_,_,_,7,_,_],
              [_,_,_,1,2,3,_,8,_],
              [2,_,5,_,_,_,_,_,9]].
-
 
 problem(2, P) :-  
         P = [[_,_,2,_,3,_,1,_,_],
@@ -169,38 +184,41 @@ problem(4,P) :-
              [_,_,2,_,_,_,_,_,_],
              [3,_,_,5,_,_,_,7,1]].
 
+% Problema con un error ya que el 5 aparece dos veces en la región superior izquierda,
+% otro error podría ser cambiar una x por un numero o viceversa.
+
+problem(e1,P) :- 
+        P = [[5,_,2,_,_,3,_,_,_],
+             [4,6,5,_,7,_,9,_,_],
+             [_,_,3,4,_,_,_,_,_],
+             [9,5,_,_,6,_,_,_,_],
+             [_,4,_,_,_,_,_,9,_],
+             [_,_,_,_,9,_,_,1,7],
+             [_,_,_,_,_,7,2,_,_],
+             [_,_,9,_,4,_,_,3,5],
+             [_,_,_,3,_,_,7,_,6]].
+
+problem(5,P) :- 
+        P = [[1,2,3,4,5,6,7,8,9],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_],
+             [_,_,_,_,_,_,_,_,_]].
+
+/* ----------------------------------------------------------------------------------------
+        El predicado test(N) es el único que se necesita para resolver el problema, 
+        si introduce test(4), resolverá el problema 4. Si introduce test(N) irá resolviendo
+        todos los problemas uno a uno con todas las posibles soluciones, para ello
+        solo debe presionar ";" y si desea parar ".".
+----------------------------------------------------------------------------------------*/
+
 test(N) :- 
         problem(N, Rows),
         sudoku(Rows),
         maplist(label, Rows),
         maplist(portray_clause, Rows).
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-   Examples:
-
-   ?- use_module(library(time)).
-      true.
-
-   ?- time((problem(1, Rows), sudoku(Rows),
-      maplist(labeling([ff]), Rows), maplist(portray_clause, Rows))).
-   [1,5,6,8,9,4,3,2,7].
-   [9,2,8,7,3,1,4,5,6].
-   [4,7,3,2,6,5,9,1,8].
-   [3,6,2,4,1,7,8,9,5].
-   [7,8,9,3,5,2,6,4,1].
-   [5,1,4,9,8,6,2,7,3].
-   [8,3,1,5,4,9,7,6,2].
-   [6,9,7,1,2,3,5,8,4].
-   [2,4,5,6,7,8,1,3,9].
-      % CPU time: 8.585 seconds
-
-   ?- show([ff], Rows).
-
-   ?- problem(1, Rows), show([ff], Rows).
-
-   Shell command:
-
-   $ scryer-prolog -g 'problem(3,Rows),show([ff],Rows)' sudoku.pl | \
-        gs -dNOPROMPT -g680x680 -dGraphicsAlphaBits=2 -r150 -q
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
