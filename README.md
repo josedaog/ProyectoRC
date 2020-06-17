@@ -11,7 +11,7 @@ El proyecto está compuesto por:
 
     * **Sistema Experto** que diagnostica si un paciente sufre de resfriado, gripe o covid19. El código fuente junto con su explicación se encuentra en [Sistema Experto](https://github.com/nordin-lab/ProyectoRC/tree/master/Sistema_Experto).
 
-    * Programa que genera y resuelve cualquier **Sudoku** 9x9. Usaremos el código de Marcus Triska, lo puedes encontrar en su [github](https://github.com/triska/the-power-of-prolog). Para ello será necesario Scryer-Prolog, por lo que detallaré cómo usarlo eficientemente gracias a Docker y WSL2, de manera que puedas usar todas las librerías que Scryer-Prolog ofrece y así probar cualquier código que [The Power of Prolog](https://www.metalevel.at/prolog) ofrece
+    * Programa que genera y resuelve cualquier **Sudoku** 9x9. Usaremos el código de Markus Triska, lo puedes encontrar en su [github](https://github.com/triska/the-power-of-prolog). Para ello será necesario Scryer-Prolog, por lo que detallaré cómo usarlo eficientemente gracias a Docker y WSL2, de manera que puedas usar todas las librerías que Scryer-Prolog ofrece y así probar cualquier código que [The Power of Prolog](https://www.metalevel.at/prolog) ofrece
     sin quebraderos de cabeza. Ubicado en [Sudoku](https://github.com/nordin-lab/ProyectoRC/tree/master/Sudoku).
 
 Bibliografía:
