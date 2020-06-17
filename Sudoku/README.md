@@ -3,7 +3,10 @@
 * [Descripción del problema](#descripción-del-problema)
 
 * [Funcionamiento del código](#funcionamiento-del-código)
-
+  * [Librerias necesarias](#añadimos-las-librerías-necesarias)
+  * [Predicado Sudoku](#predicado-que-resuelve-el-sudoku)
+  * [Estructura del tablero](#estructura-del-tablero)
+  * [Uso del programa](#uso-del-programa)
 * [Ejecutar Scryer-Prolog](#ejecutar-scryer-prolog)
 
 ## Descripción del problema
@@ -48,7 +51,7 @@ El código con su explicación lo puede encontrar en [sudoku.pl](https://github.
 
 ## Funcionamiento del código
 
-#### 1. Añadimos las librerias necesarias
+### Añadimos las librerías necesarias
 
 ~~~
 :- use_module(library(clpz)).
@@ -59,7 +62,7 @@ El código con su explicación lo puede encontrar en [sudoku.pl](https://github.
 :- use_module(library(charsio)).
 ~~~
 
- #### 2. Predicado que resuelve el Sudoku
+### Predicado que resuelve el Sudoku
 
 ~~~
 sudoku(Rows) :-
@@ -113,7 +116,7 @@ Para dividirlo en bloques usa el predicado *blocks* que definieremos a continuac
 
 Primero definimos el "caso base", como será el bloque que estará compuesto por 3 listas, luego hacemos uso del [Cabeza|Resto], de esta forma nos quedamos con los 3 primero elementos de la lista. A continuación volvemos a hacer uso de *all_distinct* para que cada elemento sea distinto para posteriormente completar cada región del bloque.
 
-#### 3. Estructura del tablero
+### Estructura del tablero
 
 Para introducir un nuevo tablero bastaría con copiar y pegar la siguiente estructura, añadiendole un numero o letra que lo identifique y rellenando los huecos con el numero que desee.
 ~~~
@@ -132,7 +135,7 @@ problem(numero,P) :-
 
 Si introduce un tablero que no tenga solución, o posea algún dato corrupto como una *x* el programa le devolverá que no tiene solución.
 
-#### 4. Uso del programa
+### Uso del programa
 
 Le he añadido un predicado **test(N)** que es el único que se necesita usar para resolver el problema, si introduce **test(4)**, resolverá el problema 4. Si introduce **test(N)** irá resolviendo todos los problemas uno a uno con todas las posibles soluciones, para ello solo debe presionar ";" y si desea parar ".".
 ~~~

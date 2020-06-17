@@ -11,7 +11,7 @@ En respuesta a esta pregunta surge la *Representación del conocimiento*, situá
 * [Propiedades de un esquema de representación](#propiedades-de-un-esquema-de-representación)
 * [Etapas de la Representación del Conocimiento](#etapas-de-la-representación-del-conocimiento)
 * [Retos que plantea la Representación del Conocimiento](#retos-que-plantea-la-representación-del-conocimiento)
-* [Formalismo de Representación del Conocimiento](#formalismo-de-representación-del-conocimiento)
+* [Formalismos de Representación del Conocimiento](#formalismos-de-representación-del-conocimiento)
 * [Resumen](#resumen)
 
 ## Introducción
