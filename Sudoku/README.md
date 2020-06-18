@@ -86,7 +86,7 @@ En el código de [sudoku.pl](https://github.com/nordin-lab/ProyectoRC/blob/maste
 
 >length(Rows, 9)
 
-* Destacamos el uso del predicado **maplist**, que nos dice si se cumple cierto predicado que nosotros introduzcamos en una lista en concreto, por ejemplo:
+* Destacamos el uso del predicado **[maplist](https://github.com/nordin-lab/scryer-prolog/blob/master/src/lib/lists.pl)**, que nos dice si se cumple cierto predicado que nosotros introduzcamos en una lista en concreto, por ejemplo:
 
 >maplist(same_length(Rows), Rows),
 >
@@ -147,7 +147,7 @@ test(N) :-
         maplist(portray_clause, Rows).
 ~~~
 
-Observamos que para ejecutar el código, debemos indicar cual es el problema a resolver, posteriormente hacemos uso del predicado sudoku(). Finalmente volvemos a hacer uso del predicado maplist() esta vez incluyendo el predicado label() el cual busca las soluciones posibles del sudoku y [portrait_clause](https://github.com/nordin-lab/scryer-prolog/blob/master/src/lib/format.pl) que nos muestra la solución por pantalla.
+Observamos que para ejecutar el código, debemos indicar cual es el problema a resolver, posteriormente hacemos uso del predicado sudoku(). Finalmente volvemos a hacer uso del predicado [maplist](https://github.com/nordin-lab/scryer-prolog/blob/master/src/lib/lists.pl)() esta vez incluyendo el predicado label() el cual busca las soluciones posibles del sudoku y [portrait_clause](https://github.com/nordin-lab/scryer-prolog/blob/master/src/lib/format.pl) que nos muestra la solución por pantalla.
 
 Para poder ejecutar este problema, o cualquiera de la web de Markus Triska necesita Scryer-Prolog, a continuación verá como hacerlo de forma sencilla.
 
