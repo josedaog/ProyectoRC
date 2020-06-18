@@ -138,6 +138,7 @@ Si introduce un tablero que no tenga solución, o posea algún dato corrupto com
 ### Uso del programa
 
 Le he añadido un predicado **test(N)** que es el único que se necesita usar para resolver el problema, si introduce **test(4)**, resolverá el problema 4. Si introduce **test(N)** irá resolviendo todos los problemas uno a uno con todas las posibles soluciones, para ello solo debe presionar ";" y si desea parar ".".
+
 ~~~
 test(N) :-
         problem(N, Rows),
@@ -145,6 +146,8 @@ test(N) :-
         maplist(label, Rows),
         maplist(portray_clause, Rows).
 ~~~
+
+Observamos que para ejecutar el código, debemos indicar cual es el problema a resolver, posteriormente hacemos uso del predicado sudoku(). Finalmente volvemos a hacer uso del predicado maplist() esta vez incluyendo el predicado label() el cual busca las soluciones posibles del sudoku y [portrait_clause](https://github.com/nordin-lab/scryer-prolog/blob/master/src/lib/format.pl) que nos muestra la solución por pantalla.
 
 Para poder ejecutar este problema, o cualquiera de la web de Markus Triska necesita Scryer-Prolog, a continuación verá como hacerlo de forma sencilla.
 
@@ -171,4 +174,3 @@ Puede escribir el programa con cualquier editor de texto que crea conveniente ta
 ![imagen10](../Teoria/imagenes/img10.png)
 
 También podría considerar interesante incluir un terminal más vistoso como [este](https://www.youtube.com/watch?v=kY4Ns260i2k).
-
