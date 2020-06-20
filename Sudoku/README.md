@@ -93,7 +93,7 @@ En el código de [sudoku.pl](https://github.com/nordin-lab/ProyectoRC/blob/maste
 >maplist(all_distinct, Rows)
 
 Usa el predicado *same_length* el cual comprueba que la lista de filas *Rows* sea igual que la lista *Rows*, aunque pueda resultar algo redundante es necesario.
-Luego vemos el uso de all_distinct el cuál es verdadero siempre que todos los elementos dados sean distintos y usa los elementos de la lista *Rows* que es donde se encuentran nuestras variables. Este predicado también es usado para las columnas, las cuales son extraemos de transponer las filas (una fila transpuesta es una columna).
+Luego vemos el uso de all_distinct el cuál es verdadero siempre que todos los elementos dados sean distintos y usa los elementos de la lista *Rows* que es donde se encuentran nuestras variables. Este predicado también es usado para las columnas, las cuales extraemos de transponer las filas (una fila transpuesta es una columna).
 
 >transpose(Rows, Columns), maplist(all_distinct, Columns),
 
